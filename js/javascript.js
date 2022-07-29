@@ -6,18 +6,18 @@ function carregar() {
     msg.innerHTML = `Agora são ${hora} horas!`
     if(hora >=0 && hora < 12){
         //bomdia
-        img.src = '../img/manha.png';
+        img.src = '../projeto_hora_do_dia/img/manha.png';
         document.body.style.background = '#ede0d8';
         let txt = document.getElementById(`txt`);
         txt.style.color = `black`
     } else if (hora >= 12 && hora <= 18){
         //boatarde
-        img.src = '../img/tarde.png';
+        img.src = '../projeto_hora_do_dia/img/tarde.png';
         document.body.style.background = '#e29838';
 
     } else {
         //boanoite
-        img.src = '../img/noite.png';
+        img.src = '../projeto_hora_do_dia/img/noite.png';
         document.body.style.background = '#053c77';
 
     }
